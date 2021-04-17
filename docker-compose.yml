@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  api:
+    container_name: api
+    build: ./api
+    command: npm run start
+    working_dir: /usr/src/api
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - SERVICE_URL=http://service:5000/
+  service:
+    container_name: service
+    build: ./service
+    command: npm run start
+    working_dir: /usr/src/service
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - DB=mongodb://mongodb:27017/sam_cart_cars
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
