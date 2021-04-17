@@ -1,4 +1,6 @@
-# To run and user test
+# Basic api and microservice for finding and listing information about "cars".
+
+## To run and user test
 
 ### 1. docker-compose up --build
 
@@ -6,8 +8,10 @@
 
 ### 3. http://localhost:3000/cars/1i3xjRIIc -> {"data":{"\_id":"607a4e1e31898200159fc746","make":"Toyota","model":"Rav4","package":"XSE","color":"Red","year":2018,"category":"SUV","mileage":24001,"price":2275000,"id":"1i3xjRIIc","\_\_v":0}}
 
-## For unit testing: bash test.sh
+## For unit testing
 
-## In api folder you can find the code that allows client to interact with the service.
+### bash test.sh
 
-## In service folder you can find the code that is responsible for receiving request from an api and responding with data when appopriate.
+## In api folder you can find the code for basic api that allows clients to interact with the service.
+
+## In service folder you can find the code for microservice that is responsible for receiving request from an api and responding with data when appopriate.
