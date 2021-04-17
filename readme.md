@@ -8,6 +8,6 @@
 
 ## For unit testing: bash test.sh
 
-## In api folder you can find the code that allows client to interact with our server.
+## In api folder you can find the code that allows client to interact with the service.
 
 ## In service folder you can find the code that is responsible for receiving request from an api and responding with data when appopriate.
